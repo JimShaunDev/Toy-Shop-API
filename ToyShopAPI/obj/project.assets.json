@@ -10023,11 +10023,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\ToyShopAPI\\ToyShopAPI\\ToyShopAPI.csproj",
+      "projectUniqueName": "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\Toy-Shop-API\\ToyShopAPI\\ToyShopAPI.csproj",
       "projectName": "ToyShopAPI",
-      "projectPath": "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\ToyShopAPI\\ToyShopAPI\\ToyShopAPI.csproj",
+      "projectPath": "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\Toy-Shop-API\\ToyShopAPI\\ToyShopAPI.csproj",
       "packagesPath": "C:\\Users\\jshau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\ToyShopAPI\\ToyShopAPI\\obj\\",
+      "outputPath": "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\Toy-Shop-API\\ToyShopAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jshau\\AppData\\Roaming\\NuGet\\NuGet.Config",

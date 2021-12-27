@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C8dzylu1JqNHIQdIhU5cku/TAKHcsVPAr98Z+MWpWaaWtE7/RAxK6yFAPZI9xPrimJnheJ5ivqUR0JBEQqnSog==",
+  "dgSpecHash": "8C/E5/prFPgmkJY81iENS5xZKUaTvjiXh3HdgMlmT6F/mpVVyhmN1HZre802OEWhyEdmzeNy+rekEFggFlUpqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\ToyShopAPI\\ToyShopAPI\\ToyShopAPI.csproj",
+  "projectFilePath": "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\Toy-Shop-API\\ToyShopAPI\\ToyShopAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jshau\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jshau\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

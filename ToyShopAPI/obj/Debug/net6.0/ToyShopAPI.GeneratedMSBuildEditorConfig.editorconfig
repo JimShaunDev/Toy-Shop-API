@@ -8,33 +8,33 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ToyShopAPI
 build_property.RootNamespace = ToyShopAPI
-build_property.ProjectDir = C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\ToyShopAPI\ToyShopAPI\
+build_property.ProjectDir = C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\ToyShopAPI\ToyShopAPI
+build_property.MSBuildProjectDirectory = C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/jshau/OneDrive/Hidden/Documents/GitHub/ToyShopAPI/ToyShopAPI/Views/Product/Create.cshtml]
+[C:/Users/jshau/OneDrive/Hidden/Documents/GitHub/Toy-Shop-API/ToyShopAPI/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jshau/OneDrive/Hidden/Documents/GitHub/ToyShopAPI/ToyShopAPI/Views/Product/Delete.cshtml]
+[C:/Users/jshau/OneDrive/Hidden/Documents/GitHub/Toy-Shop-API/ToyShopAPI/Views/Product/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jshau/OneDrive/Hidden/Documents/GitHub/ToyShopAPI/ToyShopAPI/Views/Product/Details.cshtml]
+[C:/Users/jshau/OneDrive/Hidden/Documents/GitHub/Toy-Shop-API/ToyShopAPI/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jshau/OneDrive/Hidden/Documents/GitHub/ToyShopAPI/ToyShopAPI/Views/Product/Edit.cshtml]
+[C:/Users/jshau/OneDrive/Hidden/Documents/GitHub/Toy-Shop-API/ToyShopAPI/Views/Product/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jshau/OneDrive/Hidden/Documents/GitHub/ToyShopAPI/ToyShopAPI/Views/Product/Index.cshtml]
+[C:/Users/jshau/OneDrive/Hidden/Documents/GitHub/Toy-Shop-API/ToyShopAPI/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jshau/OneDrive/Hidden/Documents/GitHub/ToyShopAPI/ToyShopAPI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/jshau/OneDrive/Hidden/Documents/GitHub/Toy-Shop-API/ToyShopAPI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

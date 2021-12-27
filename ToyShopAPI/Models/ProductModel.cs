@@ -8,6 +8,7 @@ namespace ToyShopAPI.Models
         [Required]
         public int ID { get; set; }
 
+        [MaxLength(150)]
         public string? Name { get; set; }    
         public string? Description { get; set; }
         public decimal Price { get; set; }
