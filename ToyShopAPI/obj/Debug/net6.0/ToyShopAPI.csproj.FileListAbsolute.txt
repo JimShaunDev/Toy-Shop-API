@@ -558,8 +558,6 @@ C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debu
 C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debug\net6.0\ToyShopAPI.csproj.CoreCompileInputs.cache
 C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debug\net6.0\ToyShopAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debug\net6.0\ToyShopAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debug\net6.0\ToyShopAPI.RazorAssemblyInfo.cache
-C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debug\net6.0\ToyShopAPI.RazorAssemblyInfo.cs
 C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debug\net6.0\scopedcss\bundle\ToyShopAPI.styles.css
@@ -568,3 +566,14 @@ C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debu
 C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debug\net6.0\ref\ToyShopAPI.dll
 C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debug\net6.0\ToyShopAPI.pdb
 C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\obj\Debug\net6.0\ToyShopAPI.genruntimeconfig.cache
+C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\ToyShopAPI.staticwebassets.runtime.json
+C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll

@@ -1,7 +1,9 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ToyShopAPI.Classes;
 using ToyShopAPI.Data;
 using ToyShopAPI.Services;
+using ToyShopAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,17 @@ builder.Services.AddControllers();
 //add data source
 builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseSqlite("Data Source=./Data/AppDb.db"));
+
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+{
+    options.Password.RequireUppercase = true;
+    options.Password.RequireDigit = true;
+    options.Password.RequireLowercase = true;
+}).AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+
+
 
 
 //for users and JWT
@@ -48,7 +61,7 @@ var app = builder.Build();
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
