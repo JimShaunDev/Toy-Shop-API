@@ -54,7 +54,7 @@ namespace ToyShopAPI.Controllers
                 return new BadRequestObjectResult(new { Message = "User Registration Failed", Errors = dictionary });
             }
 
-            return Ok(new { Message = "User Reigstration Successful" });
+            return Ok(new { Message = "User Registration Successful" });
         }
 
         [HttpPost]
