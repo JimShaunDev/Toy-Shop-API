@@ -13,11 +13,11 @@ namespace ToyShopAPI.Controllers
 {
     [Route("api/products")]
     [ApiController]
-    public class ProducController : ControllerBase
+    public class ProductController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
 
-        public ProducController(ApplicationDbContext context)
+        public ProductController(ApplicationDbContext context)
         {
             _context = context;
         }
