@@ -2,8 +2,13 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Text;
 using System.Web.Http.ModelBinding;
+using ToyShopAPI.Classes;
 using ToyShopAPI.Models;
 
 namespace ToyShopAPI.Controllers
@@ -12,19 +17,25 @@ namespace ToyShopAPI.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly SignInManager<IdentityUser> signInManager;
+        private readonly SignInManager<UserModel> signInManager;
         private readonly UserManager<IdentityUser> userManager;
 
-        public AuthController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager)
+        private readonly JwtBearerTokenSettings jwtBearerTokenSettings;
+       
+
+        public AuthController(IOptions<JwtBearerTokenSettings> jwtTokenOptions, UserManager<IdentityUser> userManager)
         {
-            this.signInManager = signInManager;
+            this.jwtBearerTokenSettings = jwtTokenOptions.Value;
             this.userManager = userManager;
         }
+
+        
 
         [HttpPost]
         [Route("Register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel userDetails)
         {
+            
             if (!ModelState.IsValid || userDetails == null)
             {
                 return new BadRequestObjectResult(new { Message = "User Registration Failed" });
@@ -50,42 +61,23 @@ namespace ToyShopAPI.Controllers
         [Route("Login")]
         public async Task<IActionResult> Login([FromBody] AuthenticateRequestModel credentials)
         {
-            
+
             //https://thecodeblogger.com/2020/01/25/securing-net-core-3-api-with-cookie-authentication/
+            UserModel identityUser;
 
-             if (!ModelState.IsValid || credentials == null)
-             {
-                 return new BadRequestObjectResult(new { Message = "Login failed" });
-             }
+            if (!ModelState.IsValid
+                || credentials == null
+                || (identityUser = await ValidateUser(credentials)) == null)
+            {
+                return new BadRequestObjectResult(new { Message = "Login failed" });
+            }
 
-             var identityUser = await userManager.FindByNameAsync(credentials.Email);
-             if (identityUser == null)
-             {
-                 return new BadRequestObjectResult(new { Message = "Login failed" });
-             }
+            var token = GenerateToken(identityUser);
+           
 
-             var result = userManager.PasswordHasher.VerifyHashedPassword(identityUser, identityUser.PasswordHash, credentials.Password);
-             if (result == PasswordVerificationResult.Failed)
-             {
-                 return new BadRequestObjectResult(new { Message = "Login failed" });
-             }
 
-             /*
-             var claims = new List<Claim>
-             {
-                 new Claim(ClaimTypes.Email, identityUser.Email),
-                 new Claim(ClaimTypes.Name, identityUser.UserName)
-             };
-
-             var claimsIdentity = new ClaimsIdentity(
-                 claims);
-
-            await HttpContext.SignInAsync(
-                new ClaimsPrincipal(claimsIdentity));
-             */
-
-             return Ok(new { Message = "You are logged in" });
-            
+            return Ok(new AuthenticateResponseModel(identityUser, token.ToString()));
+           
         }
 
         [HttpPost]
@@ -94,6 +86,46 @@ namespace ToyShopAPI.Controllers
         {
             await HttpContext.SignOutAsync();
             return Ok(new { Message = "You are logged out" });
+        }
+
+
+
+
+
+        private async Task<UserModel> ValidateUser(AuthenticateRequestModel credentials)
+        {
+            var identityUser = await userManager.FindByNameAsync(credentials.Email);
+            if (identityUser != null)
+            {
+                var result = userManager.PasswordHasher.VerifyHashedPassword(identityUser, identityUser.PasswordHash, credentials.Password);
+                return (UserModel)(result == PasswordVerificationResult.Failed ? null : identityUser);
+            }
+
+            return null;
+        }
+
+
+        private object GenerateToken(UserModel identityUser)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(jwtBearerTokenSettings.SecretKey);
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                //Subject = new ClaimsIdentity(new Claim[]
+                //{
+                //    new Claim(ClaimTypes.Name, identityUser.UserName.ToString()),
+                //    new Claim(ClaimTypes.Email, identityUser.Email)
+                //}),
+
+                Expires = DateTime.UtcNow.AddSeconds(jwtBearerTokenSettings.ExpiryTimeInSeconds),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
+                Audience = jwtBearerTokenSettings.Audience,
+                Issuer = jwtBearerTokenSettings.Issuer
+            };
+            Console.WriteLine("Hello");
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
 
     }

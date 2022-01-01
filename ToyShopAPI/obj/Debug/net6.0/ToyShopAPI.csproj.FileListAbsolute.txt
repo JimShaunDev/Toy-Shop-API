@@ -577,3 +577,4 @@ C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debu
 C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\ToyShopAPI.staticwebassets.runtime.json
 C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\jshau\OneDrive\Hidden\Documents\GitHub\Toy-Shop-API\ToyShopAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -1,4 +1,6 @@
-﻿namespace ToyShopAPI.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace ToyShopAPI.Models
 {
     public class AuthenticateResponseModel
     {
@@ -14,7 +16,7 @@
             Id = user.Id;
             FirstName = user.FirstName;
             LastName = user.LastName;
-            Email = user.Email;
+            Email = user.UserName;
             Token = token;
         }
     }

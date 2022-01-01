@@ -2,8 +2,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ToyShopAPI.Classes;
 using ToyShopAPI.Data;
-using ToyShopAPI.Services;
 using ToyShopAPI.Models;
+using System.Configuration;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,15 +32,50 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 
 
 //for users and JWT
-var services = builder.Services;
-services.AddCors();
+
+builder.Services.AddCors();
 
 
+
+
+
+
+// configure strongly typed settings objects
+
+
+
+var jwtSection = builder.Configuration.GetSection("JwtBearerTokenSettings");
+builder.Services.Configure<JwtBearerTokenSettings>(jwtSection);
+var jwtBearerTokenSettings = jwtSection.Get<JwtBearerTokenSettings>();
+var key = Encoding.ASCII.GetBytes(jwtBearerTokenSettings.SecretKey);
+
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+    .AddJwtBearer(options =>
+    {
+        options.RequireHttpsMetadata = false;
+        options.SaveToken = true;
+        options.TokenValidationParameters = new TokenValidationParameters()
+        {
+            ValidateIssuer = true,
+            ValidIssuer = jwtBearerTokenSettings.Issuer,
+            ValidateAudience = true,
+            ValidAudience = jwtBearerTokenSettings.Audience,
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ValidateLifetime = true,
+            ClockSkew = TimeSpan.Zero
+        };
+    });
 // configure strongly typed settings object
-services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
+//services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 
 // configure DI for application services
-services.AddScoped<IUserService, UserService>();
+//services.AddScoped<IUserService, UserService>();
 
 
 //add swashbuckle for visual api features
@@ -54,8 +93,7 @@ var app = builder.Build();
         .AllowAnyMethod()
         .AllowAnyHeader());
 
-    // custom jwt auth middleware
-    app.UseMiddleware<JwtMiddleware>();
+  
 
     app.MapControllers();
 }
