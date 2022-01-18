@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\Toy-Shop-API\\ToyShopAPI\\ToyShopAPI.csproj": {}
+    "C:\\Users\\woo15904504\\OneDrive - Bridgwater and Taunton College\\Year 2\\Assignments\\SCDT56 - Team Project and Industry Experience\\CW2\\NewCode\\ToyShopAPI\\ToyShopAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\Toy-Shop-API\\ToyShopAPI\\ToyShopAPI.csproj": {
+    "C:\\Users\\woo15904504\\OneDrive - Bridgwater and Taunton College\\Year 2\\Assignments\\SCDT56 - Team Project and Industry Experience\\CW2\\NewCode\\ToyShopAPI\\ToyShopAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\Toy-Shop-API\\ToyShopAPI\\ToyShopAPI.csproj",
+        "projectUniqueName": "C:\\Users\\woo15904504\\OneDrive - Bridgwater and Taunton College\\Year 2\\Assignments\\SCDT56 - Team Project and Industry Experience\\CW2\\NewCode\\ToyShopAPI\\ToyShopAPI.csproj",
         "projectName": "ToyShopAPI",
-        "projectPath": "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\Toy-Shop-API\\ToyShopAPI\\ToyShopAPI.csproj",
-        "packagesPath": "C:\\Users\\jshau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jshau\\OneDrive\\Hidden\\Documents\\GitHub\\Toy-Shop-API\\ToyShopAPI\\obj\\",
+        "projectPath": "C:\\Users\\woo15904504\\OneDrive - Bridgwater and Taunton College\\Year 2\\Assignments\\SCDT56 - Team Project and Industry Experience\\CW2\\NewCode\\ToyShopAPI\\ToyShopAPI.csproj",
+        "packagesPath": "C:\\Users\\woo15904504\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\woo15904504\\OneDrive - Bridgwater and Taunton College\\Year 2\\Assignments\\SCDT56 - Team Project and Industry Experience\\CW2\\NewCode\\ToyShopAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jshau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\woo15904504\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
