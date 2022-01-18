@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r7eYnCTHpWcshK97fs014CLTdbPfcYULPVC1DVx//a1vLmWM9hXjhpG5V0yfXTNUgX1MYIPXXsnmiiqfNoXb3g==",
+  "dgSpecHash": "5aS1S85QXuM+rRg3O1lxuNfGBGrALQJtabslYWUlj19ZDsrOJyiz7RN+zLaM87d8sk6xGZk6P4OMx4jy2XPBBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\woo15904504\\OneDrive - Bridgwater and Taunton College\\Year 2\\Assignments\\SCDT56 - Team Project and Industry Experience\\CW2\\NewCode\\ToyShopAPI\\ToyShopAPI.csproj",
+  "projectFilePath": "C:\\Users\\woo15904504\\Source\\Repos\\Toy-Shop-API\\ToyShopAPI\\ToyShopAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\woo15904504\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\woo15904504\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

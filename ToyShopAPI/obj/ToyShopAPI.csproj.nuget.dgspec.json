@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\woo15904504\\OneDrive - Bridgwater and Taunton College\\Year 2\\Assignments\\SCDT56 - Team Project and Industry Experience\\CW2\\NewCode\\ToyShopAPI\\ToyShopAPI.csproj": {}
+    "C:\\Users\\woo15904504\\Source\\Repos\\Toy-Shop-API\\ToyShopAPI\\ToyShopAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\woo15904504\\OneDrive - Bridgwater and Taunton College\\Year 2\\Assignments\\SCDT56 - Team Project and Industry Experience\\CW2\\NewCode\\ToyShopAPI\\ToyShopAPI.csproj": {
+    "C:\\Users\\woo15904504\\Source\\Repos\\Toy-Shop-API\\ToyShopAPI\\ToyShopAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\woo15904504\\OneDrive - Bridgwater and Taunton College\\Year 2\\Assignments\\SCDT56 - Team Project and Industry Experience\\CW2\\NewCode\\ToyShopAPI\\ToyShopAPI.csproj",
+        "projectUniqueName": "C:\\Users\\woo15904504\\Source\\Repos\\Toy-Shop-API\\ToyShopAPI\\ToyShopAPI.csproj",
         "projectName": "ToyShopAPI",
-        "projectPath": "C:\\Users\\woo15904504\\OneDrive - Bridgwater and Taunton College\\Year 2\\Assignments\\SCDT56 - Team Project and Industry Experience\\CW2\\NewCode\\ToyShopAPI\\ToyShopAPI.csproj",
+        "projectPath": "C:\\Users\\woo15904504\\Source\\Repos\\Toy-Shop-API\\ToyShopAPI\\ToyShopAPI.csproj",
         "packagesPath": "C:\\Users\\woo15904504\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\woo15904504\\OneDrive - Bridgwater and Taunton College\\Year 2\\Assignments\\SCDT56 - Team Project and Industry Experience\\CW2\\NewCode\\ToyShopAPI\\obj\\",
+        "outputPath": "C:\\Users\\woo15904504\\Source\\Repos\\Toy-Shop-API\\ToyShopAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\woo15904504\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

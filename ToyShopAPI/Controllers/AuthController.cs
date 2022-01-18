@@ -33,7 +33,7 @@ namespace ToyShopAPI.Controllers
 
         [HttpPost]
         [Route("Register")]
-        public async Task<IActionResult> Register([FromBody] RegisterModel userDetails)
+        public async Task<IActionResult> Register([FromBody] UserModel userDetails)
         {
             
             if (!ModelState.IsValid || userDetails == null)
@@ -69,15 +69,14 @@ namespace ToyShopAPI.Controllers
                 || credentials == null
                 || (identityUser = await ValidateUser(credentials)) == null)
             {
-                return new BadRequestObjectResult(new { Message = "Login failed" });
+                return new BadRequestObjectResult(new { Success = false });
             }
 
             var token = GenerateToken(identityUser);
-           
 
 
-            return Ok(new AuthenticateResponseModel(identityUser, token.ToString()));
-           
+
+            return Ok(new { Success = true, auth = new AuthenticateResponseModel(identityUser, token.ToString()) });
         }
 
         [HttpPost]
